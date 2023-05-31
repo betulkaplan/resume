@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     /> -->
     <link href="./build.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
     <title>Betul Kaplan — Resume</title>
   </head>
 
@@ -23,25 +24,19 @@
       <!-- Page -->
       <div
         style="page-break-after: always"
-        class="p-6 m-3 mx-auto page max-w-2xl print:bg-white print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-gray-300"
+        class="p-6 m-3 mx-auto page max-w-2xl print:bg-white print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-12 bg-gray-300"
       >
         <!-- Name -->
         <div class="flex justify-between">
           <header class="flex items-center mb-8 md:mb-11">
             <div
-              class="initials-container h-full mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-              style="
-                padding-bottom: 0.6875rem;
-                padding-top: 0.6875rem; /*11px*/
-              "
+              class="w-20 h-20 rounded-full overflow-hidden border-2 border-gray-700 mr-3"
             >
-              <div
-                class="initial text-center"
-                style="padding-bottom: 0.1875rem; /*3px*/"
-              >
-                B
-              </div>
-              <div class="text-center initial">K</div>
+              <img
+                src="https://media.licdn.com/dms/image/C4D03AQE7vaIDRgtC3A/profile-displayphoto-shrink_400_400/0/1551641344331?e=1691020800&v=beta&t=olX6L8BjvBe3PY7rmGZmImhg40N5zI43-eG59WBZYzg"
+                alt="Your Image"
+                class="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 class="text-2xl font-semibold text-gray-750 pb-px">
@@ -113,56 +108,93 @@
 
         <!-- Column -->
         <div
-          class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto"
+          class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto flex"
         >
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                ABOUT ME
-              </h2>
+          <div class="w-8/12">
+            <section class="mt-8 first:mt-0">
+              <!-- To keep in the same column -->
+              <div class="break-inside-avoid">
+                <h2
+                  class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
+                >
+                  EXPERIENCE
+                </h2>
+
+                <section class="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3
+                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                    >
+                      Amplo AG
+                    </h3>
+                    <p class="leading-normal text-md text-gray-650">
+                      Mar 2022 – Present | Fullstack Developer
+                    </p>
+                  </header>
+                  <ul class="">
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Designed reusable form elements using react-hook-form and
+                      generics in TypeScript.
+                    </li>
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Implemented single sign in feature using Google and
+                      Microsoft OAuth2 APIs.
+                    </li>
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Increased database performance by 65% by eliminating
+                      costly queries by using Django ORM features.
+                    </li>
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Developed asynchronous and scheduled tasks using Celery
+                      Python package, improving the efficiency and scalability
+                      of the web application's backend services.
+                    </li>
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Used Cypress and GitHub actions to setup automated staging
+                      flows which reduces around 60% bugs in production.
+                    </li>
+                    <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                      <span
+                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                        >›</span
+                      >
+                      Established a Kubernetes cluster in Azure and set up CI/CD
+                      actions to automatically deploy to the staging environment
+                      on changes.
+                    </li>
+                  </ul>
+                </section>
+              </div>
 
               <section class="mb-4.5 break-inside-avoid">
                 <header>
                   <h3
                     class="text-lg font-semibold text-gray-700 leading-snugish"
                   >
-                    Software Engineer
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">Since 2010</p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  As an enthusiastic full-stack developer, I bring over two
-                  years of valuable experience to the table. My expertise lies
-                  in producing efficient, clean code and reusable components,
-                  showcasing my dedication to delivering top-notch work. By
-                  working collaboratively, I leverage strong communication
-                  skills to ensure effective collaboration with my colleagues.
-                </p>
-              </section>
-            </div>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                EXPERIENCE
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Amplo AG
+                    Hypnotes
                   </h3>
                   <p class="leading-normal text-md text-gray-650">
-                    Mar 2022 – Present | Fullstack Developer
+                    June 2021 – Mar 2022 | Frontend Developer
                   </p>
                 </header>
                 <ul class="">
@@ -171,272 +203,201 @@
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Designed reusable form elements using react-hook-form and
-                    generics in TypeScript.
+                    Developed responsive web pages in Next.js
                   </li>
                   <li class="mt-2.1 text-md text-gray-700 leading-normal">
                     <span
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Implemented single sign in feature using Google and
-                    Microsoft OAuth2 APIs.
+                    Worked in an environment that employs Docker, Jira, Github
+                    for project management and deployment.
                   </li>
                   <li class="mt-2.1 text-md text-gray-700 leading-normal">
                     <span
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Increased database performance by 65% by eliminating costly
-                    queries by using Django ORM features.
+                    Used Ant Design / Ant Charts tools, Bootstrap, Moment.js,
+                    Fuse.js.
                   </li>
                   <li class="mt-2.1 text-md text-gray-700 leading-normal">
                     <span
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Developed asynchronous and scheduled tasks using Celery
-                    Python package, improving the efficiency and scalability of
-                    the web application's backend services.
+                    Applied Google Geocoding solutions for client addressing.
                   </li>
                   <li class="mt-2.1 text-md text-gray-700 leading-normal">
                     <span
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Used Cypress and GitHub actions to setup automated staging
-                    flows which reduces around 60% bugs in production.
+                    Implemented PayPal payment solutions.
                   </li>
                   <li class="mt-2.1 text-md text-gray-700 leading-normal">
                     <span
                       class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
                       >›</span
                     >
-                    Established a Kubernetes cluster in Azure and set up CI/CD
-                    actions to automatically deploy to the staging environment
-                    on changes.
+                    Fixed bugs emerging in different browsers.
                   </li>
                 </ul>
               </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Hypnotes
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  June 2021 – Mar 2022 | Frontend Developer
-                </p>
-              </header>
-              <ul class="">
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Developed responsive web pages in Next.js
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Worked in an environment that employs Docker, Jira, Github for
-                  project management and deployment.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Used Ant Design / Ant Charts tools, Bootstrap, Moment.js,
-                  Fuse.js.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Applied Google Geocoding solutions for client addressing.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Implemented PayPal payment solutions.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Fixed bugs emerging in different browsers.
-                </li>
-              </ul>
-            </section>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Clarusway
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  Jan 2020 – Jun 2021 | Front-end Developer
-                </p>
-              </header>
-              <ul class="">
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Developed interactive, responsive and scalable frontend and
-                  mobile applications using Django, React.js, Redux, Next.js,
-                  HTML5, CSS3, JavaScript ES6, Git@Github.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Experienced in writing modular and reusable codes, using build
-                  tools and package managers.
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Studied on Computational Thinking, Operating Systems, Linux,
-                  Version Control Systems, Software Development Life Cycle
-                  (SDLC).
-                </li>
-                <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  Used SCRUM & Agile methodologies and JIRA while working on
-                  individual & group projects.
-                </li>
-              </ul>
-            </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                SKILLS
-              </h2>
 
               <section class="mb-4.5 break-inside-avoid">
                 <header>
                   <h3
                     class="text-lg font-semibold text-gray-700 leading-snugish"
                   >
-                    Frontend
+                    Clarusway
                   </h3>
+                  <p class="leading-normal text-md text-gray-650">
+                    Jan 2020 – Jun 2021 | Front-end Developer
+                  </p>
                 </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Strong frontend skills with ability to leverage TypeScript's
-                  strong typing system and use generic types for creating
-                  reusable components.
-                </p>
-                <div class="my-3.2 last:pb-1.5">
-                  <ul
-                    class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6"
-                  >
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                <ul class="">
+                  <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
                     >
-                      TypeScript
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                    Developed interactive, responsive and scalable frontend and
+                    mobile applications using Django, React.js, Redux, Next.js,
+                    HTML5, CSS3, JavaScript ES6, Git@Github.
+                  </li>
+                  <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
                     >
-                      ES6
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                    Experienced in writing modular and reusable codes, using
+                    build tools and package managers.
+                  </li>
+                  <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
                     >
-                      React.js
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
+                    Studied on Computational Thinking, Operating Systems, Linux,
+                    Version Control Systems, Software Development Life Cycle
+                    (SDLC).
+                  </li>
+                  <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                    <span
+                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
+                      >›</span
                     >
-                      Next.js
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Prisma
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Cypress
-                    </li>
-
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Chakra UI
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Figma
-                    </li>
-                  </ul>
-                </div>
+                    Used SCRUM & Agile methodologies and JIRA while working on
+                    individual & group projects.
+                  </li>
+                </ul>
               </section>
+              <div class="break-inside-avoid">
+                <h2
+                  class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
+                >
+                  EDUCATION
+                </h2>
+
+                <section class="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3
+                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                    >
+                      Clarusway ( Bootcamp )
+                    </h3>
+                    <p class="leading-normal text-md text-gray-650">
+                      Nov 2020 – Aug 2021 | Fullstack Development Program
+                    </p>
+                  </header>
+                  <br />
+                  <header>
+                    <h3
+                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                    >
+                      Dokuz Eylul University
+                    </h3>
+                    <p class="leading-normal text-md text-gray-650">
+                      2012 – 2018 | Bachelor’s Degree in Electrical and
+                      Electronics Engineering
+                    </p>
+                  </header>
+                </section>
+              </div>
+            </section>
+          </div>
+          <div class="w-4/12 bg-gray-400 p-4">
+            <section class="mt-8 first:mt-0">
+              <!-- To keep in the same column -->
+              <div class="break-inside-avoid">
+                <h2
+                  class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
+                >
+                  SKILLS
+                </h2>
+
+                <section class="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3
+                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                    >
+                      Frontend
+                    </h3>
+                  </header>
+                  <div class="my-3.2 last:pb-1.5">
+                    <ul
+                      id="skills-ul-fe"
+                      class="flex-col text-md leading-relaxed -mr-1.6 -mb-1.6"
+                    ></ul>
+                  </div>
+                </section>
+                <section class="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3
+                      class="text-lg font-semibold text-gray-700 leading-snugish"
+                    >
+                      Backend
+                    </h3>
+                  </header>
+                  <div class="my-3.2 last:pb-1.5">
+                    <ul
+                      id="skills-ul-be"
+                      class="flex-col text-md leading-relaxed -mr-1.6 -mb-1.6"
+                    ></ul>
+                  </div>
+                </section>
+              </div>
+
               <section class="mb-4.5 break-inside-avoid">
                 <header>
                   <h3
                     class="text-lg font-semibold text-gray-700 leading-snugish"
                   >
-                    Backend
+                    Other
                   </h3>
                 </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Proficient in Python type system. Utilized Python along with
-                  Django Rest Framework to develop robust and scalable backend
-                  systems. Also familiar with Express.js structure and worked in
-                  small scaled projects.
-                </p>
                 <div class="my-3.2 last:pb-1.5">
-                  <ul
-                    class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6"
-                  >
+                  <ul class="flex-col text-md leading-relaxed -mr-1.6 -mb-1.6">
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      Python
+                      Kubernetes
                     </li>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      MyPy
+                      CI/CD Pipelines
                     </li>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      Django
+                      Redis
                     </li>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      Next.js
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      Django Rest Framework
+                      Docker
                     </li>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
@@ -446,113 +407,18 @@
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      Node.js
+                      Scrum
                     </li>
                     <li
                       class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
                     >
-                      Functional Programming
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      OOP
-                    </li>
-                    <li
-                      class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                    >
-                      PostgreSQL
+                      Kanban
                     </li>
                   </ul>
                 </div>
               </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Other
-                </h3>
-              </header>
-              <div class="my-3.2 last:pb-1.5">
-                <ul
-                  class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6"
-                >
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Kubernetes
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    CI/CD Pipelines
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Redis
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Docker
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Celery
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Scrum
-                  </li>
-                  <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-                  >
-                    Kanban
-                  </li>
-                </ul>
-              </div>
             </section>
-          </section>
-
-          <section class="mt-8 first:mt-0">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                EDUCATION
-              </h2>
-
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Clarusway ( Bootcamp )
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Nov 2020 – Aug 2021 | Fullstack Development Program
-                  </p>
-                </header>
-              </section>
-            </div>
-
-            <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Dokuz Eylul University
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2012 – 2018 | Bachelor’s Degree in Electrical and Electronics
-                  Engineering
-                </p>
-              </header>
-            </section>
-          </section>
+          </div>
         </div>
         <!-- end Column -->
       </div>
