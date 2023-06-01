@@ -1,11 +1,12 @@
 const frontendSkills = [
-  { skill: "Typscript", level: 1 },
-  { skill: "React.js", level: 4 },
+  { skill: "Typscript", level: 4 },
+  { skill: "React.js", level: 5 },
   { skill: "Next.js", level: 4 },
-  { skill: "Prisma", level: 3 },
+  { skill: "Prisma", level: 4 },
   { skill: "Cypress", level: 4 },
   { skill: "Chakra UI", level: 4 },
   { skill: "Figma", level: 4 },
+  { skill: "Angular", level: 3 },
 ];
 const backendSkills = [
   { skill: "Java", level: 3 },
