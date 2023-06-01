@@ -30,9 +30,6 @@ function generateLevelIndicator(level) {
   wrapper2.classList.add("flex");
 
   [1, 2, 3, 4, 5].forEach((i, index) => {
-    if (index > level) {
-      console.log("burada icini bosalt");
-    }
     const element = document.createElement("div");
     element.classList.add("mr-1");
 
